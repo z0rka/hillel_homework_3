@@ -16,7 +16,7 @@ public class Test {
         for (int i = 0; i < figures.length; i += 3) {
             figures[i] = new Circle(3);
             figures[i + 1] = new Square(5);
-            figures[i + 2] = new Triangle(2,4);
+            figures[i + 2] = new Triangle(2, 4);
         }
 
         System.out.println("Total area of all the figures = " + areaCounter(figures, figures.length));
