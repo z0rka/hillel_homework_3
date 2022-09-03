@@ -3,9 +3,9 @@ package ua.ithillel.lms.homework3.model.figures;
 import ua.ithillel.lms.homework3.model.figures.api.Countable;
 
 public class Counter {
-    private static int sumCounter;
+    private static double sumCounter;
 
-    public static int areaCounter(Countable countable[], int i) {
+    public static double areaCounter(Countable countable[], int i) {
         while (i > 0) {
             i--;
             sumCounter += countable[i].getArea();
@@ -13,7 +13,7 @@ public class Counter {
         return getSumCounter();
     }
 
-    private static int getSumCounter() {
+    private static double getSumCounter() {
         return sumCounter;
     }
 }

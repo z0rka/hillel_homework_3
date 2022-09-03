@@ -11,12 +11,12 @@ public class Test {
 
     public static void main(String[] args) {
 
-        Countable[] figures = new Countable[21];
+        Countable[] figures = new Countable[3];
 
         for (int i = 0; i < figures.length; i += 3) {
-            figures[i] = new Circle(10);
-            figures[i + 1] = new Square(10);
-            figures[i + 2] = new Triangle(10);
+            figures[i] = new Circle(3);
+            figures[i + 1] = new Square(5);
+            figures[i + 2] = new Triangle(2,4);
         }
 
         System.out.println("Total area of all the figures = " + areaCounter(figures, figures.length));

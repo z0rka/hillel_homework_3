@@ -4,14 +4,14 @@ import ua.ithillel.lms.homework3.model.figures.api.Countable;
 
 public class Square implements Countable {
 
-    private int area;
+    private double side;
 
-    public Square(int area) {
-        this.area = area;
+    public Square(int side) {
+        this.side = side;
     }
 
     @Override
-    public int getArea() {
-        return area;
+    public double getArea() {
+        return Math.pow(side, 2);
     }
 }

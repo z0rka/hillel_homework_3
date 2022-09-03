@@ -4,14 +4,16 @@ import ua.ithillel.lms.homework3.model.figures.api.Countable;
 
 public class Triangle implements Countable {
 
-    private int area;
+    private double height;
+    private double weight;
 
-    public Triangle(int area) {
-        this.area = area;
+    public Triangle(int weight, int height) {
+        this.weight = weight;
+        this.height = height;
     }
 
     @Override
-    public int getArea() {
-        return area;
+    public double getArea() {
+        return (weight * height);
     }
 }
